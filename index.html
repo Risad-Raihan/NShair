@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>NS Global Hair Traders</title>
+    
+        <!-- Font Awesome (latest version only) -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <!-- Navigation Bar -->
+    <nav id="topbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold" href="#">NS Global Hair Traders</a>
+    
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Navbar Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#slider">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-light ms-2" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            // Parallax Effect for Banner
+            function EasyPeasyParallax() {
+                const scrollPos = window.scrollY;
+                const banner = document.getElementById("banner");
+                const bannerText = document.getElementById("bannertext");
+    
+                if (banner) {
+                    banner.style.backgroundPosition = `50% ${-scrollPos / 4}px`;
+                }
+    
+                if (bannerText) {
+                    bannerText.style.marginTop = `${scrollPos / 4}px`;
+                    bannerText.style.opacity = 1 - scrollPos / 250;
+                }
+            }
+    
+            document.addEventListener("scroll", EasyPeasyParallax);
+        });
+    </script>
+    
+    
+    <!-- Parallax Banner -->
+    <div id="banner" class="bg-dark text-white text-center py-5">
+        <div id="bannertext" class="container">
+            <h1 class="display-4">NS Global Hair Traders</h1>
+            <p class="lead">Finest handmade wig manufacturing since 2012</p>
+            <a href="catalog.pdf" class="btn btn-catalog" target="_blank">Download Catalog</a>
+        </div>
+    </div>
+
+    <!-- About Us Section -->
+    <section id="about" class="section-bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Text Content -->
+                <div class="col-lg-6">
+                    <h4 class="text-uppercase text-success">Crafting Quality Wigs</h4>
+                    <h2 class="fw-bold">Tradition and Innovation Combined</h2>
+                    <p>
+                        NS Global Hair Traders stands at the forefront of the hair wig industry, blending time-honored craftsmanship with cutting-edge techniques. Based in Bangladesh, we specialize in delivering high-quality hair solutions tailored to individual preferences and professional requirements. Our commitment to excellence ensures that each wig not only meets but exceeds expectations, empowering you to express your unique style.
+                    </p>
+                    <p>
+                        Join us as we redefine the art of wig manufacturing, setting new standards in quality and creativity.
+                    </p>
+                    <a href="#contact" class="btn btn-outline-primary mt-3">Get in Touch</a>
+                </div>
+    
+                <!-- Image Content -->
+                <div class="col-lg-6 text-center">
+                    <img src="images/about-image.jpg" alt="Wig Manufacturing" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Product Slider -->
+   <!-- Products Section -->
+<section id="products" class="section-bg-dark">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Top Selling Wigs</h2>
+            <p class="section-subtitle">Discover premium hair solutions</p>
+        </div>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-lg product-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="card-img-container">
+                        <img
+                            src="images/slide1.jpg"
+                            class="card-img-top"
+                            alt="Hollywood Mono"
+                        />
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Hollywood Mono</h5>
+                        <p class="card-text">
+                            Elevate your style with the luxurious Hollywood Mono.
+                        </p>
+                        <a href="/Hollywood Mono" class="btn btn-gradient">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-lg product-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="card-img-container">
+                        <img
+                            src="images/slide2.jpg"
+                            class="card-img-top"
+                            alt="Full Lace"
+                        />
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Full Lace</h5>
+                        <p class="card-text">
+                            Achieve a glamorous look with the Full Lace.
+                        </p>
+                        <a href="/Full Lace" class="btn btn-gradient">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card h-100 shadow-lg product-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="card-img-container">
+                        <img
+                            src="images/slide3.jpg"
+                            class="card-img-top"
+                            alt="Full Skin"
+                        />
+                    </div>
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Full Skin</h5>
+                        <p class="card-text">
+                            Discover effortless style with the Full Skin.
+                        </p>
+                        <a href="/Full Skin" class="btn btn-gradient">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Customer Reviews Section -->
+<section id="reviews" class="section-bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">What Our Customers Say</h2>
+        <p class="text-center mb-5">Real reviews from our valued customers</p>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="review-card shadow-lg">
+                    <div class="review-avatar text-center">
+                        <img src="images/reviewer1.jpg" alt="Sarah J." class="rounded-circle mb-3">
+                    </div>
+                    <div class="review-text">
+                        "The Apollo Wig has completely transformed my style. The quality and comfort are unmatched. I’m so happy I found NS Global Hair Traders!"
+                    </div>
+                    <div class="review-rating text-center">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="reviewer-name text-center mt-3">- Sarah J.</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="review-card shadow-lg">
+                    <div class="review-avatar text-center">
+                        <img src="images/reviewer2.jpg" alt="Michael R." class="rounded-circle mb-3">
+                    </div>
+                    <div class="review-text">
+                        "I have been using their Hollywood Wig for months, and I always receive compliments. Highly recommend this brand to anyone looking for premium wigs."
+                    </div>
+                    <div class="review-rating text-center">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="reviewer-name text-center mt-3">- Michael R.</p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 mb-4">
+                <div class="review-card shadow-lg">
+                    <div class="review-avatar text-center">
+                        <img src="images/reviewer3.jpg" alt="Emily T." class="rounded-circle mb-3">
+                    </div>
+                    <div class="review-text">
+                        "The A-8 Wig is the perfect fit for me. It’s lightweight, stylish, and feels natural. Excellent service and products!"
+                    </div>
+                    <div class="review-rating text-center">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="reviewer-name text-center mt-3">- Emily T.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<section id="world-map" class="section-bg-dark">
+    <div class="container-fluid">
+        <div class="text-center mb-4">
+            <h2>Our Global Presence</h2>
+            <p>We proudly operate in several countries worldwide. Click a pin to explore more.</p>
+        </div>
+        <div class="map-container position-relative">
+            <div id="map">
+                <!-- Animated Circles for Each Location -->
+                <div class="location" data-country="Türkiye" data-link="https://example.com/turkey" style="top: 55%; left: 60%;"></div>
+                <div class="location" data-country="Netherlands" data-link="https://example.com/netherlands" style="top: 35%; left: 52%;"></div>
+                <div class="location" data-country="India" data-link="https://example.com/india" style="top: 60%; left: 70%;"></div>
+                <div class="location" data-country="Spain" data-link="https://example.com/spain" style="top: 40%; left: 48%;"></div>
+                <div class="location" data-country="Croatia" data-link="https://example.com/croatia" style="top: 45%; left: 53%;"></div>
+                <div class="location" data-country="Italy" data-link="https://example.com/italy" style="top: 45%; left: 55%;"></div>
+                <div class="location" data-country="UK" data-link="https://example.com/uk" style="top: 30%; left: 50%;"></div>
+                <div class="location" data-country="Ireland" data-link="https://example.com/ireland" style="top: 30%; left: 48%;"></div>
+                <div class="location" data-country="USA (Texas)" data-link="https://example.com/usa-texas" style="top: 50%; left: 30%;"></div>
+                <div class="location" data-country="USA (Los Angeles)" data-link="https://example.com/usa-los-angeles" style="top: 50%; left: 20%;"></div>
+                <div class="location" data-country="USA (California)" data-link="https://example.com/usa-california" style="top: 48%; left: 22%;"></div>
+                <div class="location" data-country="Malaysia" data-link="https://example.com/malaysia" style="top: 70%; left: 75%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const locations = document.querySelectorAll('.location');
+
+        locations.forEach(location => {
+            location.addEventListener('click', () => {
+                const link = location.getAttribute('data-link');
+                if (link) {
+                    window.open(link, '_blank');
+                } else {
+                    alert(`Explore our operations in ${location.getAttribute('data-country')}!`);
+                }
+            });
+        });
+    });
+</script>
+
+
+<!-- Counter Section -->
+<section id="stats-and-hope" class="section-bg-light">
+    <div class="container-fluid">
+        <div class="row justify-content-center text-center">
+            <div class="col-md-3">
+                <div class="counter-card">
+                    <h2 id="countries-count" class="counter" data-target="12">0</h2>
+                    <p>Operating Countries</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="counter-card">
+                    <h2 id="customers-count" class="counter" data-target="15000">0</h2>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="counter-card">
+                    <h2 id="partners-count" class="counter" data-target="26">0</h2>
+                    <p>Business Partners</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+        <section id="cancer-support" class="py-5">
+            <div class="container">
+                <!-- Card Section -->
+                <div class="cancer-card shadow-lg mx-auto">
+                    <div class="card-content">
+                        <h2 class="section-title mb-3">Caring Beyond Business</h2>
+                        <p class="description">
+                            <span class="highlight">17%</span> of our valued customers are cancer patients, and we are proud to support them with special discounts to make their journey a little easier.
+                        </p>
+                        <p class="description">
+                            We also collaborate with distributors who cater to cancer patients, offering discounts to ensure affordability for those in need.
+                        </p>
+                        <p class="description">
+                            Each year, we celebrate the recovery of customers who no longer need our wigs due to their improved health. Although we lose them as customers, we cherish staying in touch as friends.
+                        </p>
+                        <p class="footer-text mt-4 fst-italic">
+                            "It's not just about wigs. It's about hope, care, and connection."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+ 
+        <section id="bulk-order-steps" class="section-bg-dark">
+            <div class="container">
+              <h2 class="text-center mb-4">Bulk Order Process</h2>
+              <p class="text-center mb-5">Understand our step-by-step process for bulk orders.</p>
+              <div class="row g-4">
+                <!-- Tile 1 -->
+                <div class="col-md-6">
+                  <div class="step-tile shadow-lg">
+                    <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Contact Us" class="tile-icon">
+                    <h5>Step 1: Contact Us</h5>
+                    <p>Reach out to us via WhatsApp or email for your bulk order inquiries.</p>
+                  </div>
+                </div>
+                <!-- Tile 2 -->
+                <div class="col-md-6">
+                  <div class="step-tile shadow-lg">
+                    <img src="https://cdn-icons-png.flaticon.com/512/9207/9207833.png" alt="Free Sample" class="tile-icon">
+                    <h5>Step 2: Free Sampling</h5>
+                    <p>We prepare and ship a free sample to you via DHL for quality assurance.</p>
+                  </div>
+                </div>
+                <!-- Tile 3 -->
+                <div class="col-md-6">
+                  <div class="step-tile shadow-lg">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1828/1828490.png" alt="Approval" class="tile-icon">
+                    <h5>Step 3: Approval</h5>
+                    <p>Once you approve the sample, we finalize the order details with you.</p>
+                  </div>
+                </div>
+                <!-- Tile 4 -->
+                <div class="col-md-6">
+                  <div class="step-tile shadow-lg">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3126/3126617.png" alt="Manufacturing" class="tile-icon">
+                    <h5>Step 4: Manufacturing</h5>
+                    <p>We either deliver from stock or begin manufacturing custom orders.</p>
+                  </div>
+                </div>
+                <!-- Tile 5 -->
+                <div class="col-md-6">
+                  <div class="step-tile shadow-lg">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2972/2972185.png" alt="Delivery" class="tile-icon">
+                    <h5>Step 5: Delivery</h5>
+                    <p>Your bulk order is delivered on time via trusted logistics partners.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          
+
+<!-- Contact Us Section -->
+<section id="contact-us" class="contact-section">
+    <div class="container">
+        <div class="text-center mb-5">
+            <h2 class="section-title">Get in Touch</h2>
+            <p class="section-subtitle">We’d love to hear from you. Feel free to reach out!</p>
+        </div>
+        <div class="row">
+            <!-- Address Section -->
+            <div class="col-lg-4 text-center contact-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="contact-icon">
+                    <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <h5>Our Address</h5>
+                <p>Faidabad , Dhakshin Khan , Uttara<br>Dhaka, Bangladesh</p>
+            </div>
+            <!-- Email Section -->
+            <div class="col-lg-4 text-center contact-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <h5>Email Us</h5>
+                <p><a href="mailto:nshairtraders75@gmail.com">nshairtraders75@gmail.com</a></p>
+            </div>
+            <!-- Phone Section -->
+            <div class="col-lg-4 text-center contact-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="contact-icon">
+                    <i class="fas fa-phone-alt"></i>
+                </div>
+                <h5>Call Us</h5>
+                <p>+880 1877-826477</p>
+            </div>
+        </div>
+        <div class="text-center mt-5">
+            <a href="https://wa.me/+880 1877-826477" class="btn btn-whatsapp" target="_blank">Chat on WhatsApp</a>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 NS Global Hair Traders. All rights reserved.</p>
+    </footer>
+
+    <!-- Add Bootstrap JS -->
+<!-- Include Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Include AOS (Animate on Scroll) Library -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+<script>
+    // Initialize AOS Library
+    AOS.init({
+        duration: 1000, // Animation duration
+        offset: 100,   // Offset from viewport
+        easing: 'ease-in-out', // Animation easing
+        once: true     // Animate only once
+    });
+</script>
+
+<!-- Map Interactivity -->
+<script>
+    // Add interactivity to the world map locations
+    document.querySelectorAll('.location').forEach(location => {
+        location.addEventListener('click', () => {
+            alert(`Explore our operations in ${location.getAttribute('data-country')}!`);
+        });
+    });
+</script>
+
+
+
+<!-- Counter Animation -->
+<script>
+    // Animate Counter Numbers
+    const counters = document.querySelectorAll('.counter');
+    counters.forEach(counter => {
+        counter.innerText = '0';
+
+        const updateCounter = () => {
+            const target = +counter.getAttribute('data-target');
+            const current = +counter.innerText;
+
+            const increment = target / 200; // Adjust speed of animation here
+
+            if (current < target) {
+                counter.innerText = Math.ceil(current + increment);
+                setTimeout(updateCounter, 20); // Adjust timing here
+            } else {
+                counter.innerText = target;
+            }
+        };
+
+        updateCounter();
+    });
+</script>
+
+<script>
+    // Optional glow animation
+    const card = document.querySelector('.cancer-card');
+    card.addEventListener('mouseover', () => {
+        card.style.boxShadow = '0 20px 40px rgba(220, 20, 60, 0.4)'; // Pink Glow
+    });
+
+    card.addEventListener('mouseout', () => {
+        card.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)'; // Reset Glow
+    });
+</script>
+
+<script>
+    // Initialize animations
+    document.querySelectorAll('.workflow-step').forEach((step, index) => {
+      step.style.opacity = '0';
+      step.style.transform = 'translateY(20px)';
+      step.style.transition = `all 0.6s ease ${index * 0.3}s`;
+    });
+  
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.workflow-step').forEach((step) => {
+        const rect = step.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          step.style.opacity = '1';
+          step.style.transform = 'translateY(0)';
+        }
+      });
+    });
+  </script>
+  
+  <script>
+    // Initialize AOS (Animate on Scroll) library
+    AOS.init({
+        duration: 1000, // Animation duration
+        offset: 100,    // Offset from viewport
+        easing: 'ease-in-out', // Animation easing
+        once: true      // Animate only once
+    });
+</script>
+
+
+
+</body>
+</html>
+
+
